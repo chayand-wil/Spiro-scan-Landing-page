@@ -125,6 +125,7 @@
         <a href="#problema" class="px-2.5 py-1.5 rounded-lg hover:text-white hover:bg-slate-800/60 transition-colors">1. El Problema</a>
         <a href="#idea" class="px-2.5 py-1.5 rounded-lg hover:text-white hover:bg-slate-800/60 transition-colors">2. La Idea</a>
         <a href="#flujo" class="px-2.5 py-1.5 rounded-lg hover:text-white hover:bg-slate-800/60 transition-colors">3. ¿Cómo funciona?</a>
+        <a href="#ensayos" class="px-2.5 py-1.5 rounded-lg hover:text-white hover:bg-slate-800/60 transition-colors text-teal-300 font-semibold">4. Pruebas de Campo</a>
       </div>
 
 
@@ -370,6 +371,60 @@
           </p>
         </div>
 
+      </div>
+
+      <!-- Evidencia Fotográfica en Campo: La Toma Manual Tradicional (fotos1) -->
+      <div class="glass-card rounded-3xl p-6 sm:p-8 border border-slate-800 space-y-6">
+        <div class="flex flex-wrap items-center justify-between pb-3 border-b border-slate-800 gap-3">
+          <div class="flex items-center gap-2.5">
+            <div class="w-8 h-8 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center text-sm font-bold border border-amber-500/20">
+              <i class="fa-solid fa-camera"></i>
+            </div>
+            <div>
+              <h3 class="text-sm sm:text-base font-bold text-white">Evidencia de Campo: La Realidad de la Toma Tradicional</h3>
+              <p class="text-xs text-slate-400">Documentación de la etapa inicial realizada con estudiantes en pasillos de la facultad</p>
+            </div>
+          </div>
+          <span class="text-xs text-amber-300 font-semibold px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30">
+            Etapa 1 · Método Manual en Pasillo
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <!-- Foto 1 -->
+          <div class="card-interactive rounded-2xl overflow-hidden border border-slate-800 group bg-slate-900/60 cursor-pointer" onclick="abrirFoto('fotos1/tradicional_tensiometro.png', 'Toma manual de presión arterial con esfigmomanómetro aneroide y estetoscopio en pupitre de pasillo')">
+            <div class="relative overflow-hidden aspect-[4/3] bg-slate-950 flex items-center justify-center">
+              <img src="fotos1/tradicional_tensiometro.png" alt="Toma de presión manual en pupitre" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-80"></div>
+              <span class="absolute bottom-3 left-3 text-[11px] font-mono text-teal-300 bg-slate-900/90 px-2.5 py-0.5 rounded border border-teal-500/30 flex items-center gap-1.5">
+                <i class="fa-solid fa-expand"></i> Ver foto completa
+              </span>
+            </div>
+            <div class="p-4 space-y-1.5">
+              <h4 class="text-sm font-bold text-white group-hover:text-teal-300 transition-colors">Instrumental Analógico & Espacio Restringido</h4>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Toma manual de signos vitales sobre pupitres en pasillos: esfigmomanómetro, alcohol y algodón. El proceso es lento y no genera trazabilidad digital.
+              </p>
+            </div>
+          </div>
+
+          <!-- Foto 2 -->
+          <div class="card-interactive rounded-2xl overflow-hidden border border-slate-800 group bg-slate-900/60 cursor-pointer" onclick="abrirFoto('fotos1/tradicional_pasillo_cronometro.png', 'Auscultación en pasillo concurrido: evaluador con estetoscopio analógico, cronometrando manualmente con celular entre ruido circundante')">
+            <div class="relative overflow-hidden aspect-[4/3] bg-slate-950 flex items-center justify-center">
+              <img src="fotos1/tradicional_pasillo_cronometro.png" alt="Auscultación tradicional en pasillo" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-80"></div>
+              <span class="absolute bottom-3 left-3 text-[11px] font-mono text-teal-300 bg-slate-900/90 px-2.5 py-0.5 rounded border border-teal-500/30 flex items-center gap-1.5">
+                <i class="fa-solid fa-expand"></i> Ver foto completa
+              </span>
+            </div>
+            <div class="p-4 space-y-1.5">
+              <h4 class="text-sm font-bold text-white group-hover:text-teal-300 transition-colors">Auscultación en Entorno Ruidoso & Conteo Manual</h4>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Evaluador auscultando con estetoscopio analógico mientras mide el tiempo con su celular en un pasillo concurrido, propenso a fatiga auditiva y sesgo de redondeo.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -693,22 +748,174 @@
       </div>
 
 
-      <!-- PUENTE HACIA EL BLOQUE 4 (DEMOSTRACIÓN REAL) -->
-      <div class="p-8 rounded-3xl bg-gradient-to-r from-teal-950/40 via-cyan-950/30 to-slate-900 border border-teal-500/40 text-center space-y-4 shadow-2xl relative overflow-hidden">
-        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-teal-500/20 text-teal-300 border border-teal-500/40">
-          <i class="fa-solid fa-arrow-right text-xs"></i> Próximo Paso · Paso 04
-        </div>
-        <h3 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-          "Ya conocen la idea y el flujo técnico. Ahora veámoslo en acción."
-        </h3>
-        <p class="text-xs sm:text-sm text-slate-300 max-w-xl mx-auto leading-relaxed">
-          En el siguiente bloque conectaremos la interfaz real: el simulador interactivo de triaje con semáforo en vivo, mapa anatómico de focos y reproductor de audio digital.
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- BLOQUE: ENSAYOS EXPERIMENTALES EN CAMPO (MÓDULO DE MEDICINA)             -->
+  <!-- ========================================================================= -->
+  <section id="ensayos" class="py-20 lg:py-28 border-b border-slate-800/80 relative bg-gradient-to-b from-[#090d16] via-slate-950 to-[#090d16]">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8 space-y-12">
+      
+      <!-- Encabezado de la Sección -->
+      <div class="text-center max-w-3xl mx-auto space-y-4">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-300 border border-emerald-500/30">
+          <i class="fa-solid fa-flask-vial text-xs"></i> Pruebas Experimentales · Módulo de Medicina USAC
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+          De la Teoría al Campo: Ensayos con el Prototipo SpiroScan
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+          Para corroborar la captura en condiciones reales, el equipo evaluó el prototipo físico en el Edificio de Ciencias Médicas de la USAC, validando la adquisición sincrónica de bioseñales sobre voluntarios.
         </p>
-        <div class="pt-3 flex flex-wrap items-center justify-center gap-4">
-          <a href="#hero" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-2xl bg-slate-800/80 hover:bg-slate-700 text-teal-300 hover:text-white font-medium text-sm border border-slate-700/60 transition-colors shadow-lg">
-            <i class="fa-solid fa-arrow-up text-xs"></i>
-            <span>Volver al inicio</span>
-          </a>
+      </div>
+
+      <!-- Tarjetas de las Pruebas con el Prototipo (fotos2) -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- Foto 1: Auscultación Anterior -->
+        <div class="card-interactive rounded-2xl overflow-hidden border border-slate-800 group bg-slate-900/60 cursor-pointer flex flex-col justify-between" onclick="abrirFoto('fotos2/prototipo_auscultacion_anterior.png', 'Auscultación de foco anterior con la campana 3D ergonómica y sensor de pulso y SpO2 en el dedo, con la plataforma de triaje corriendo en vivo en la laptop')">
+          <div>
+            <div class="relative overflow-hidden aspect-[4/5] bg-slate-950">
+              <img src="fotos2/prototipo_auscultacion_anterior.png" alt="Auscultación anterior con prototipo SpiroScan" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-75"></div>
+              <span class="absolute top-3 left-3 text-[10px] font-mono uppercase tracking-wider text-teal-300 bg-teal-950/80 px-2 py-0.5 rounded border border-teal-500/30">
+                Foco Anterior
+              </span>
+              <span class="absolute bottom-3 left-3 text-[11px] font-mono text-teal-300 bg-slate-900/90 px-2.5 py-0.5 rounded border border-teal-500/30 flex items-center gap-1.5">
+                <i class="fa-solid fa-expand"></i> Ampliar foto
+              </span>
+            </div>
+            <div class="p-5 space-y-2">
+              <h3 class="text-base font-bold text-white group-hover:text-teal-300 transition-colors">
+                1. Auscultación Precordial & Canal Óptico
+              </h3>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Aplicación de la campana cónica 3D sobre el tórax del voluntario sincronizada con el sensor óptico en dedo (MAX30102). La plataforma en laptop recibe simultáneamente audio digital y pulsioximetría en tiempo real.
+              </p>
+            </div>
+          </div>
+          <div class="px-5 pb-5 pt-2 border-t border-slate-800/80 text-[11px] text-teal-300 flex items-center gap-1.5 font-medium">
+            <i class="fa-solid fa-circle-check text-teal-400"></i> Fusión sincrónica de bioseñales
+          </div>
+        </div>
+
+        <!-- Foto 2: Auscultación Posterior -->
+        <div class="card-interactive rounded-2xl overflow-hidden border border-slate-800 group bg-slate-900/60 cursor-pointer flex flex-col justify-between" onclick="abrirFoto('fotos2/prototipo_auscultacion_posterior.png', 'Auscultación de campos pulmonares en la espalda de la voluntaria, visualizando el mapa anatómico dorsal en la laptop')">
+          <div>
+            <div class="relative overflow-hidden aspect-[4/5] bg-slate-950">
+              <img src="fotos2/prototipo_auscultacion_posterior.png" alt="Auscultación posterior en espalda con SpiroScan" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-75"></div>
+              <span class="absolute top-3 left-3 text-[10px] font-mono uppercase tracking-wider text-cyan-300 bg-cyan-950/80 px-2 py-0.5 rounded border border-cyan-500/30">
+                Campos Pulmonares
+              </span>
+              <span class="absolute bottom-3 left-3 text-[11px] font-mono text-teal-300 bg-slate-900/90 px-2.5 py-0.5 rounded border border-teal-500/30 flex items-center gap-1.5">
+                <i class="fa-solid fa-expand"></i> Ampliar foto
+              </span>
+            </div>
+            <div class="p-5 space-y-2">
+              <h3 class="text-base font-bold text-white group-hover:text-cyan-300 transition-colors">
+                2. Auscultación Dorsal de Campos Pulmonares
+              </h3>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Captura de sonidos respiratorios en la región posterior de la espalda. La interfaz despliega el mapa dorsal interactivo, asignando cada toma acústica a su cuadrante anatómico correspondiente sin confusiones.
+              </p>
+            </div>
+          </div>
+          <div class="px-5 pb-5 pt-2 border-t border-slate-800/80 text-[11px] text-cyan-300 flex items-center gap-1.5 font-medium">
+            <i class="fa-solid fa-circle-check text-cyan-400"></i> Localización anatómica precisa
+          </div>
+        </div>
+
+        <!-- Foto 3: Equipo y Validación -->
+        <div class="card-interactive rounded-2xl overflow-hidden border border-slate-800 group bg-slate-900/60 cursor-pointer flex flex-col justify-between" onclick="abrirFoto('fotos2/equipo_medicina_usac.png', 'El equipo de desarrollo con docentes y evaluadores en el Edificio de Medicina USAC sosteniendo el prototipo físico funcional y la computadora')">
+          <div>
+            <div class="relative overflow-hidden aspect-[4/5] bg-slate-950">
+              <img src="fotos2/equipo_medicina_usac.png" alt="Equipo de investigación en la Facultad de Medicina USAC" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-75"></div>
+              <span class="absolute top-3 left-3 text-[10px] font-mono uppercase tracking-wider text-amber-300 bg-amber-950/80 px-2 py-0.5 rounded border border-amber-500/30">
+                Facultad de Medicina
+              </span>
+              <span class="absolute bottom-3 left-3 text-[11px] font-mono text-teal-300 bg-slate-900/90 px-2.5 py-0.5 rounded border border-teal-500/30 flex items-center gap-1.5">
+                <i class="fa-solid fa-expand"></i> Ampliar foto
+              </span>
+            </div>
+            <div class="p-5 space-y-2">
+              <h3 class="text-base font-bold text-white group-hover:text-amber-300 transition-colors">
+                3. Validación Multidisciplinaria en Campo
+              </h3>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Sesión de pruebas y demostración con el equipo de estudiantes, docentes y colaboradores en el edificio de Ciencias Médicas de la USAC, comprobando la estabilidad del hardware portátil y la ingesta de datos.
+              </p>
+            </div>
+          </div>
+          <div class="px-5 pb-5 pt-2 border-t border-slate-800/80 text-[11px] text-amber-300 flex items-center gap-1.5 font-medium">
+            <i class="fa-solid fa-users text-amber-400"></i> Evaluación multidisciplinaria en USAC
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Cuadro Comparativo Metodológico: Etapa Inicial vs SpiroScan -->
+      <div class="glass-card rounded-3xl p-6 sm:p-8 border border-slate-800 space-y-6">
+        <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-scale-balanced text-teal-400"></i>
+            <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-white">Contraste Metodológico de Campo</span>
+          </div>
+          <span class="text-xs text-slate-400 font-mono">Cohorte Exploratoria Local N=18</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs sm:text-sm">
+          
+          <!-- Columna Método Tradicional -->
+          <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-3">
+            <div class="flex items-center justify-between pb-2 border-b border-slate-800">
+              <strong class="text-slate-300 font-bold flex items-center gap-2">
+                <i class="fa-solid fa-stethoscope text-slate-500"></i> 1. Etapa Inicial (Método Tradicional)
+              </strong>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-400">Línea Base</span>
+            </div>
+            <ul class="space-y-2.5 text-slate-400 leading-relaxed">
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-xmark text-rose-400 text-xs mt-1 flex-shrink-0"></i>
+                <span><strong class="text-slate-200">Fatiga y subjetividad:</strong> Dependencia exclusiva del oído del examinador bajo ruido ambiente de pasillo.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-xmark text-rose-400 text-xs mt-1 flex-shrink-0"></i>
+                <span><strong class="text-slate-200">Sesgo de redondeo demostrado:</strong> 76.5% de registros de frecuencia terminaron en números pares por conteo manual de 15 o 30 segundos multiplicado.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-xmark text-rose-400 text-xs mt-1 flex-shrink-0"></i>
+                <span><strong class="text-slate-200">Cero trazabilidad:</strong> Sin registro de audio ni señales para auditoría o segundas opiniones.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Columna Prototipo SpiroScan -->
+          <div class="p-5 rounded-2xl bg-teal-950/20 border border-teal-500/30 space-y-3">
+            <div class="flex items-center justify-between pb-2 border-b border-teal-500/20">
+              <strong class="text-teal-300 font-bold flex items-center gap-2">
+                <i class="fa-solid fa-microchip text-teal-400"></i> 2. Pruebas con Prototipo SpiroScan
+              </strong>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-teal-500/20 text-teal-300">TRL 4 Validado</span>
+            </div>
+            <ul class="space-y-2.5 text-slate-300 leading-relaxed">
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-check text-teal-400 text-xs mt-1 flex-shrink-0"></i>
+                <span><strong class="text-white">Aislamiento acústico pasivo:</strong> Cámara cónica que concentra la onda acústica en el micrófono MEMS I2S, reduciendo el murmullo de fondo.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-check text-teal-400 text-xs mt-1 flex-shrink-0"></i>
+                <span><strong class="text-white">Fusión de dos canales:</strong> Registro en paralelo de la señal fonocardiográfica/respiratoria y la curva fotopletismográfica ($SpO_2$ y BPM).</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-check text-teal-400 text-xs mt-1 flex-shrink-0"></i>
+                <span><strong class="text-white">Historial digital continuo:</strong> Almacenamiento directo para reanálisis computacional y triaje algorítmico objetivo.</span>
+              </li>
+            </ul>
+          </div>
+
         </div>
       </div>
 
@@ -853,6 +1060,51 @@
         iconContainer.className = `w-11 h-11 rounded-xl bg-${data.color}-500/10 text-${data.color}-400 border border-${data.color}-500/20 flex items-center justify-center text-lg shrink-0 transition-all scale-110`;
       }
     }
+
+    // -------------------------------------------------------------------------
+    // Visor Modal para Fotografías de Campo
+    // -------------------------------------------------------------------------
+    function abrirFoto(src, caption) {
+      const modal = document.getElementById('modalFoto');
+      const img = document.getElementById('modalFotoImg');
+      const cap = document.getElementById('modalFotoCap');
+      if (modal && img && cap) {
+        img.src = src;
+        cap.textContent = caption;
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function cerrarFoto() {
+      const modal = document.getElementById('modalFoto');
+      if (modal) {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+        document.body.style.overflow = '';
+      }
+    }
+
+    // Cerrar modal con tecla Escape
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        cerrarFoto();
+      }
+    });
   </script>
+
+  <!-- Modal para Visualización Ampliada de Fotografías de Campo -->
+  <div id="modalFoto" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden items-center justify-center p-4 transition-all" onclick="cerrarFoto()">
+    <div class="relative max-w-4xl max-h-[92vh] flex flex-col items-center bg-slate-900 border border-slate-800 rounded-3xl p-4 sm:p-6 overflow-hidden shadow-2xl" onclick="event.stopPropagation()">
+      <button onclick="cerrarFoto()" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 flex items-center justify-center text-base z-10 transition-colors cursor-pointer" title="Cerrar (Esc)">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="max-h-[75vh] overflow-hidden rounded-2xl flex items-center justify-center bg-black/50 w-full">
+        <img id="modalFotoImg" src="" alt="Fotografía de campo ampliada" class="max-h-[75vh] w-auto max-w-full object-contain rounded-xl">
+      </div>
+      <p id="modalFotoCap" class="mt-4 text-xs sm:text-sm text-slate-300 text-center max-w-2xl px-2 font-medium leading-relaxed"></p>
+    </div>
+  </div>
 </body>
 </html>
